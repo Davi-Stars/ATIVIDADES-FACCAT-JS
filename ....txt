@@ -1,0 +1,692 @@
+// Solução do exercício 1
+console.log("=====================================")
+console.log("Solução do exercício 1:")
+let A = 10; // Guardando 10 na A
+let B = 20; // E 20 na B
+[A, B] = [B, A]; // Trocando os valores sem dó nem piedade
+console.log("A:", A, "B:", B); // Mostrando quem ficou com quem
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 2
+console.log("Solução do exercício 2:");
+let A1 = 10, B1 = 20;
+console.log(B1); // B1 é o primeiro a aparecer!
+B1 = 5; // Olha a mudança!
+console.log(A1, B1); // E agora?
+let C1 = A1 + B1;
+console.log(C1); // C1, um valor novo na área
+B1 = 10;
+console.log(A1, B1); // Opa, de novo
+C1 = A1 + B1;
+console.log(A1, B1, C1); // E o C1 de novo!
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 3
+console.log("Solução do exercício 3:");
+let A2 = (4/2) + (2/4);
+let B2 = 4/(2 + 2)/4;
+let C2 = (4 + 2) * 2 - 4;
+console.log(A2, B2, C2); // Esses números tão parecendo bons, hein?
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 4
+console.log("Solução do exercício 4:");
+let A3 = 6 * (3 + 2);
+let B3 = 2 + (6 * (3 + 2));
+let C3 = 2 + (3 * 6) / (2 + 4);
+let D3 = 2 * (8 / (3 + 1));
+let E3 = 3 + (16 - 2) / (2 * (9 - 2));
+let F3 = (6 / 3) + (8 / 2);
+let G3 = ((3 + (8 / 2)) * 4) + (3 * 2);
+let H3 = (6 * (3 * 3) + 6) - 10;
+let I3 = (((10 * 8) + 3) * 9);
+let J3 = ((-12) * (-4)) + (3 * (-4));
+console.log(A3, B3, C3, D3, E3, F3, G3, H3, I3, J3); // Tô começando a sentir a matemática!
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 5
+console.log("Solução do exercício 5:");
+let valor = prompt("Digite um valor: "); // Fazendo o input do usuário
+console.log("Antecessor: ", valor - 1); // O antecessor é o cara mais velho
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 6
+console.log("Solução do exercício 6:");
+let base = prompt("Digite a base do retângulo: ");
+let altura = prompt("Digite a altura do retângulo: ");
+let area = base * altura; // Calculando a área com toda a calma
+console.log("Área do retângulo: ", area); // Falei que ia dar certo!
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 7
+console.log("Solução do exercício 7:");
+let anos = prompt("Digite sua idade em anos: ");
+let meses = prompt("Agora, em meses: ");
+let dias = prompt("E em dias: ");
+let totalDias = (anos * 365) + (meses * 30) + dias; // Fazendo as contas
+console.log("Idade em dias: ", totalDias); // Fica a dica: não conte os dias se não quiser envelhecer
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 8
+console.log("Solução do exercício 8:");
+let eleitores = prompt("Digite o número total de eleitores: ");
+let brancos = prompt("Digite o número de votos brancos: ");
+let nulos = prompt("Digite o número de votos nulos: ");
+let validos = prompt("Digite o número de votos válidos: ");
+console.log("Percentual de votos brancos: ", (brancos / eleitores) * 100);
+console.log("Percentual de votos nulos: ", (nulos / eleitores) * 100);
+console.log("Percentual de votos válidos: ", (validos / eleitores) * 100);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 9
+console.log("Solução do exercício 9:");
+let salarioAtual = prompt("Digite o salário atual: ");
+let percentual = prompt("Digite o percentual de reajuste: ");
+let novoSalario = salarioAtual * (1 + percentual / 100); // O famoso reajuste
+console.log("Novo salário: ", novoSalario);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 10
+console.log("Solução do exercício 10:");
+let custoFabrica = prompt("Digite o custo de fábrica: ");
+let percentualDistribuidor = 0.28;
+let percentualImpostos = 0.45;
+let custoFinal = custoFabrica * (1 + percentualDistribuidor + percentualImpostos);
+console.log("Custo final ao consumidor: ", custoFinal);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 11
+console.log("Solução do exercício 11:");
+let numCarros = prompt("Digite o número de carros vendidos: ");
+let valorVendas = prompt("Digite o valor total das vendas: ");
+let salarioFixo = prompt("Digite o salário fixo: ");
+let comissaoPorCarro = prompt("Digite o valor da comissão por carro vendido: ");
+let salarioFinal = salarioFixo + (numCarros * comissaoPorCarro) + (valorVendas * 0.05);
+console.log("Salário final: ", salarioFinal);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 12
+console.log("Solução do exercício 12:");
+let F = prompt("Digite a temperatura em Fahrenheit: ");
+let C = (F - 32) * (5 / 9); // Conversão marota
+console.log("Temperatura em Celsius: ", C);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 13
+console.log("Solução do exercício 13:");
+let n1 = prompt("Digite a primeira nota: ");
+let n2 = prompt("Digite a segunda nota: ");
+let n3 = prompt("Digite a terceira nota: ");
+let mediaFinal = (n1 * 2 + n2 * 3 + n3 * 5) / 10; // Fórmula da vida!
+console.log("Média final: ", mediaFinal);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 14
+console.log("Solução do exercício 14:");
+let valor14 = prompt("Digite um valor: ");
+if (valor14 > 10) {
+  console.log("É MAIOR QUE 10!"); // Com certeza é maior
+} else {
+  console.log("NÃO É MAIOR QUE 10!"); // Ops, que mancada!
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 15
+console.log("Solução do exercício 15:");
+let valor15 = prompt("Digite um valor: ");
+if (valor15 >= 0) {
+  console.log("Positivo"); // Vamo que vamo
+} else {
+  console.log("Negativo"); // A vida tem altos e baixos, né?
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 16
+console.log("Solução do exercício 16:");
+let numMacas = prompt("Digite o número de maçãs compradas: ");
+let preco = numMacas < 12 ? numMacas * 1.30 : numMacas * 1.00; // Opa, 1.30 ou 1.00?
+console.log("Custo total: ", preco);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 17
+console.log("Solução do exercício 17:");
+let nota1 = prompt("Digite a nota da 1ª avaliação: ");
+let nota2 = prompt("Digite a nota da 2ª avaliação: ");
+let media = (nota1 + nota2) / 2; // Média dos dois
+if (media >= 6) {
+  console.log("Aprovado"); // Aí sim!
+} else {
+  console.log("Reprovado"); // Eita!
+}
+console.log("Média: ", media);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 18
+console.log("Solução do exercício 18:");
+let anoAtual = prompt("Digite o ano atual: ");
+let anoNascimento = prompt("Digite seu ano de nascimento: ");
+let idade = anoAtual - anoNascimento; // Contando os anos
+if (idade >= 16) {
+  console.log("Pode votar"); // Olha o voto aí!
+} else {
+  console.log("Não pode votar"); // Quase lá!
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 19
+console.log("Solução do exercício 19:");
+let valor19_1 = prompt("Digite o primeiro valor: ");
+let valor19_2 = prompt("Digite o segundo valor: ");
+if (valor19_1 > valor19_2) {
+  console.log("O maior é: ", valor19_1); // Ah, é o primeiro!
+} else {
+  console.log("O maior é: ", valor19_2); // Então é o segundo!
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 20
+console.log("Solução do exercício 20:");
+let valor20_1 = prompt("Digite o primeiro valor: ");
+let valor20_2 = prompt("Digite o segundo valor: ");
+if (valor20_1 < valor20_2) {
+  console.log(valor20_1, ", ", valor20_2); // Menor primeiro
+} else {
+  console.log(valor20_2, ", ", valor20_1); // Menor primeiro
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 21
+console.log("Solução do exercício 21:");
+let inicio = prompt("Digite a hora de início do jogo: ");
+let fim = prompt("Digite a hora de fim do jogo: ");
+let duracao = (fim >= inicio) ? (fim - inicio) : (24 - inicio + fim); // A mágica do tempo
+console.log("Duração do jogo: ", duracao, " horas");
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 22
+console.log("Solução do exercício 22:");
+let horasTrabalhadas = prompt("Digite o número de horas trabalhadas no mês: ");
+let salarioHora = prompt("Digite o valor da hora: ");
+let salarioTotal = (horasTrabalhadas > 160) ? 
+  (160 * salarioHora + (horasTrabalhadas - 160) * (salarioHora * 1.5)) : 
+  (horasTrabalhadas * salarioHora);
+console.log("Salário total: ", salarioTotal); // Paga bem!
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 23
+console.log("Solução do exercício 23:");
+let nome23 = prompt("Digite seu nome: ");
+let altura = prompt("Digite sua altura: ");
+let sexo = prompt("Digite seu sexo (M ou F): ");
+let pesoIdeal = (sexo === "M") ? ((72.7 * altura) - 58) : ((62.1 * altura) - 44.7);
+console.log("Peso ideal: ", pesoIdeal);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 24
+console.log("Solução do exercício 24:");
+let salarioFixo = prompt("Digite seu salário fixo: ");
+let valorVendas = prompt("Digite o valor das vendas: ");
+let salarioTotal24 = (valorVendas <= 1500) ? 
+  (salarioFixo + (valorVendas * 0.03)) : 
+  (salarioFixo + (1500 * 0.03) + ((valorVendas - 1500) * 0.05));
+console.log("Salário total: ", salarioTotal24);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 25
+console.log("Solução do exercício 25:");
+let numConta = prompt("Digite o número da conta: ");
+let saldo = prompt("Digite seu saldo: ");
+let debito = prompt("Digite seu débito: ");
+let credito = prompt("Digite seu crédito: ");
+let saldoAtual = saldo - debito + credito; // Saldo básico
+console.log("Saldo atual: ", saldoAtual);
+console.log(saldoAtual >= 0 ? "Saldo Positivo" : "Saldo Negativo"); // Olha o saldo!
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 26
+console.log("Solução do exercício 26:");
+let qtdAtual = prompt("Digite a quantidade atual em estoque: ");
+let qtdMax = prompt("Digite a quantidade máxima em estoque: ");
+let qtdMin = prompt("Digite a quantidade mínima em estoque: ");
+let qtdMedia = (qtdMax + qtdMin) / 2; // Fazendo a média
+console.log(qtdAtual >= qtdMedia ? "Não efetuar compra" : "Efetuar compra");
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 27
+console.log("Solução do exercício 27:");
+let valor27 = prompt("Digite um valor: ");
+if (valor27 > 0) {
+  console.log("Positivo"); // Aí sim!
+} else if (valor27 === 0) {
+  console.log("Zero"); // Equilíbrio!
+} else {
+  console.log("Negativo"); // Ah não, que mancada!
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 28
+console.log("Solução do exercício 28:");
+let valor28_1 = prompt("Digite o primeiro valor: ");
+let valor28_2 = prompt("Digite o segundo valor: ");
+let valor28_3 = prompt("Digite o terceiro valor: ");
+let maior28;
+if (valor28_1 > valor28_2 && valor28_1 > valor28_3) {
+  maior28 = valor28_1; // O primeiro tá se achando
+} else if (valor28_2 > valor28_1 && valor28_2 > valor28_3) {
+  maior28 = valor28_2; // O segundo é o rei do pedaço
+} else {
+  maior28 = valor28_3; // O terceiro tá na jogada
+}
+console.log("Maior: ", maior28);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 29
+console.log("Solução do exercício 29:");
+let valor29_1 = prompt("Digite o primeiro valor: ");
+let valor29_2 = prompt("Digite o segundo valor: ");
+let valor29_3 = prompt("Digite o terceiro valor: ");
+let soma29 = 0;
+if (valor29_1 < valor29_2 && valor29_1 < valor29_3) {
+  soma29 = valor29_2 + valor29_3; // Primeiro fora, somando os outros
+} else if (valor29_2 < valor29_1 && valor29_2 < valor29_3) {
+  soma29 = valor29_1 + valor29_3; // Segundo fora
+} else {
+  soma29 = valor29_1 + valor29_2; // Terceiro fora
+}
+console.log("Soma dos dois maiores valores: ", soma29);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 30
+console.log("Solução do exercício 30:");
+let valor30_1 = prompt("Digite o primeiro valor: ");
+let valor30_2 = prompt("Digite o segundo valor: ");
+let valor30_3 = prompt("Digite o terceiro valor: ");
+let menor30;
+if (valor30_1 < valor30_2 && valor30_1 < valor30_3) {
+  menor30 = valor30_1;
+} else if (valor30_2 < valor30_1 && valor30_2 < valor30_3) {
+  menor30 = valor30_2;
+} else {
+  menor30 = valor30_3;
+}
+console.log("Menor: ", menor30);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 31
+console.log("Solução do exercício 31:");
+let A31 = prompt("Digite o lado A: ");
+let B31 = prompt("Digite o lado B: ");
+let C31 = prompt("Digite o lado C: ");
+if ((A31 < B31 + C31) && (B31 < A31 + C31) && (C31 < A31 + B31)) {
+  console.log("Formam um triângulo"); // Olha o triângulo aí, gente!
+} else {
+  console.log("Não formam um triângulo"); // Tô triste agora
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 32
+console.log("Solução do exercício 32:");
+let time1_32 = prompt("Digite o nome do primeiro time: ");
+let time2_32 = prompt("Digite o nome do segundo time: ");
+let gols1_32 = prompt("Digite os gols do " + time1_32 + ": ");
+let gols2_32 = prompt("Digite os gols do " + time2_32 + ": ");
+if (gols1_32 > gols2_32) {
+  console.log("Vencedor: ", time1_32); // Time 1 é o campeão
+} else if (gols2_32 > gols1_32) {
+  console.log("Vencedor: ", time2_32); // Time 2 se destacou
+} else {
+  console.log("EMPATE"); // Que tenso!
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 33
+console.log("Solução do exercício 33:");
+let valor33_1 = prompt("Digite o primeiro valor: ");
+let valor33_2 = prompt("Digite o segundo valor: ");
+if (valor33_1 === valor33_2) {
+  console.log("Números iguais"); // Parabéns pra eles!
+} else if (valor33_1 > valor33_2) {
+  console.log("Primeiro é maior"); // O primeiro tá se achando
+} else {
+  console.log("Segundo é maior"); // O segundo também é um bom jogador
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 34
+console.log("Solução do exercício 34:");
+let x34 = prompt("Digite o primeiro valor: ");
+let y34 = prompt("Digite o segundo valor: ");
+let z34 = (x34 * y34) + 5;
+let resposta34;
+if (z34 <= 0) {
+  resposta34 = 'A'; // Z tá na bad
+} else if (z34 <= 100) {
+  resposta34 = 'B'; // Z tá ok
+} else {
+  resposta34 = 'C'; // Z tá bombando!
+}
+console.log("Z: ", z34, " Resposta: ", resposta34);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 35
+console.log("Solução do exercício 35:");
+let litros = prompt("Digite o número de litros vendidos: ");
+let combustivel = prompt("Digite o tipo de combustível (A-álcool, G-gasolina): ");
+let valor35;
+if (combustivel === "A") {
+  valor35 = (litros <= 20) ? (litros * 2.90 * 0.97) : (litros * 2.90 * 0.95); // Economizando com o álcool
+} else if (combustivel === "G") {
+  valor35 = (litros <= 20) ? (litros * 3.30 * 0.96) : (litros * 3.30 * 0.94); // A gasolina também dá desconto
+}
+console.log("Valor a pagar: ", valor35);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 36
+console.log("Solução do exercício 36:");
+let idadeHomem1 = prompt("Digite a idade do primeiro homem: ");
+let idadeHomem2 = prompt("Digite a idade do segundo homem: ");
+let idadeMulher1 = prompt("Digite a idade da primeira mulher: ");
+let idadeMulher2 = prompt("Digite a idade da segunda mulher: ");
+let soma36 = 0, produto36 = 0;
+if (idadeHomem1 > idadeHomem2) {
+  soma36 = +idadeHomem1 + Math.min(idadeMulher1, idadeMulher2);
+  produto36 = idadeHomem2 * Math.max(idadeMulher1, idadeMulher2);
+} else {
+  soma36 = +idadeHomem2 + Math.min(idadeMulher1, idadeMulher2);
+  produto36 = idadeHomem1 * Math.max(idadeMulher1, idadeMulher2);
+}
+console.log("Soma: ", soma36);
+console.log("Produto: ", produto36);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 37
+console.log("Solução do exercício 37:");
+let kgMorango = prompt("Digite a quantidade de morangos (kg): ");
+let kgMaca = prompt("Digite a quantidade de maçãs (kg): ");
+let precoMorango = (kgMorango <= 5) ? (kgMorango * 2.50) : (kgMorango * 2.20); // Olha o preço dos morangos
+let precoMaca = (kgMaca <= 5) ? (kgMaca * 1.80) : (kgMaca * 1.50); // E as maçãs também
+let total37 = precoMorango + precoMaca;
+let desconto37 = (kgMorango + kgMaca > 8 || total37 > 25) ? (total37 * 0.10) : 0; // Desconto no final
+console.log("Total a pagar: ", total37 - desconto37);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 38
+console.log("Solução do exercício 38:");
+let codigoUsuario = prompt("Digite o código do usuário: ");
+if (codigoUsuario === "1234") {
+  let senha = prompt("Digite a senha: ");
+  if (senha === "9999") {
+    console.log("Acesso permitido"); // Liberou geral
+  } else {
+    console.log("Senha incorreta"); // Aí complicou
+  }
+} else {
+  console.log("Usuário inválido"); // Cadê o cadastro, meu povo?
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 39
+console.log("Solução do exercício 39:");
+let A39 = true, B39 = true, C39 = false;
+console.log((A39 && B39) || (A39 !== B39)); // Tô quase entendendo lógica
+console.log((A39 || B39) && (A39 && C39));
+console.log(A39 || C39 && B39 !== A39 && !B39);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 40
+console.log("Solução do exercício 40:");
+let descricao = prompt("Digite a descrição do produto: ");
+let quantidade = prompt("Digite a quantidade adquirida: ");
+let precoUnitario = prompt("Digite o preço unitário: ");
+let total40 = quantidade * precoUnitario;
+let desconto40 = 0;
+if (quantidade <= 5) {
+  desconto40 = total40 * 0.02;
+} else if (quantidade > 5 && quantidade <= 10) {
+  desconto40 = total40 * 0.03;
+} else {
+  desconto40 = total40 * 0.05;
+}
+let totalPagar40 = total40 - desconto40;
+console.log("Total a pagar: ", totalPagar40);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 41
+console.log("Solução do exercício 41:");
+let N1_41 = prompt("Digite a primeira nota: ");
+let N2_41 = prompt("Digite a segunda nota: ");
+let N3_41 = prompt("Digite a terceira nota: ");
+let MediaExercicios = prompt("Digite a média dos exercícios: ");
+let MediaAproveitamento = (N1_41 + N2_41 * 2 + N3_41 * 3 + MediaExercicios) / 7;
+let conceito = "";
+if (MediaAproveitamento >= 9) {
+  conceito = "A"; // Alta performance
+} else if (MediaAproveitamento >= 7.5) {
+  conceito = "B"; // Bom desempenho
+} else if (MediaAproveitamento >= 6) {
+  conceito = "C"; // Pode melhorar
+} else {
+  conceito = "D"; // Precisa de reforço
+}
+console.log("Conceito: ", conceito);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 42
+console.log("Solução do exercício 42:");
+let codigoEmpregado = prompt("Digite o código do empregado: ");
+let anoNascimento = prompt("Digite o ano de nascimento: ");
+let anoIngresso = prompt("Digite o ano de ingresso na empresa: ");
+let idade42 = 2024 - anoNascimento; // Contando os anos
+let tempoTrabalho42 = 2024 - anoIngresso; // E o tempo de trabalho
+console.log("Idade: ", idade42);
+console.log("Tempo de trabalho: ", tempoTrabalho42);
+if (idade42 >= 65 || tempoTrabalho42 >= 30 || (idade42 >= 60 && tempoTrabalho42 >= 25)) {
+  console.log("Requerer aposentadoria"); // Hora de descansar
+} else {
+  console.log("Não requerer aposentadoria"); // Mais um tempinho na firma
+}
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 43
+console.log("Solução do exercício 43:");
+let a43 = prompt("Digite o lado A: ");
+let b43 = prompt("Digite o lado B: ");
+let c43 = prompt("Digite o lado C: ");
+let mens43 = "";
+if (a43 < b43 + c43 && b43 < a43 + c43 && c43 < a43 + b43) {
+  if (a43 === b43 && b43 === c43) {
+    mens43 = "Triângulo Equilátero"; // O triângulo perfeito
+  } else if (a43 === b43 || b43 === c43 || a43 === c43) {
+    mens43 = "Triângulo Isósceles"; // Um triângulo meio certinho
+  } else {
+    mens43 = "Triângulo Escaleno"; // O triângulo diferente
+  }
+} else {
+  mens43 = "Não é possível formar um triângulo"; // Não dá pra fazer mágica
+}
+console.log(mens43);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 44
+console.log("Solução do exercício 44:");
+let valor44_1 = prompt("Digite o primeiro valor: ");
+let valor44_2;
+do {
+  valor44_2 = prompt("Digite o segundo valor (não pode ser zero): ");
+} while (valor44_2 == 0); // Enquanto for zero, continua pedindo
+console.log("Resultado da divisão: ", valor44_1 / valor44_2);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 45
+console.log("Solução do exercício 45:");
+let valor45_1 = prompt("Digite o primeiro valor: ");
+let valor45_2;
+while (valor45_2 == 0) {
+  valor45_2 = prompt("Digite o segundo valor (não pode ser zero): ");
+  console.log("VALOR INVÁLIDO");
+}
+console.log("Resultado da divisão: ", valor45_1 / valor45_2);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 46
+console.log("Solução do exercício 46:");
+let valor46_1 = prompt("Digite o primeiro valor: ");
+let valor46_2;
+do {
+  valor46_2 = prompt("Digite o segundo valor (não pode ser zero): ");
+  if (valor46_2 == 0) {
+    console.log("VALOR INVÁLIDO");
+  }
+} while (valor46_2 == 0);
+console.log("Resultado da divisão: ", valor46_1 / valor46_2);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 47
+console.log("Solução do exercício 47:");
+let valor47_1 = prompt("Digite o primeiro valor: ");
+let valor47_2;
+while (true) {
+  valor47_2 = prompt("Digite o segundo valor (não pode ser zero): ");
+  if (valor47_2 == 0) {
+    console.log("VALOR INVÁLIDO");
+  } else {
+    break; // Sai do loop se tá tudo certo
+  }
+}
+console.log("Resultado da divisão: ", valor47_1 / valor47_2);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 48
+console.log("Solução do exercício 48:");
+let nota48_1, nota48_2;
+do {
+  nota48_1 = prompt("Digite a primeira nota (entre 0 e 10): ");
+} while (nota48_1 < 0 || nota48_1 > 10);
+do {
+  nota48_2 = prompt("Digite a segunda nota (entre 0 e 10): ");
+} while (nota48_2 < 0 || nota48_2 > 10);
+let media48 = (nota48_1 + nota48_2) / 2;
+console.log("Média: ", media48);
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 49
+console.log("Solução do exercício 49:");
+let continuar49;
+do {
+  let nota49_1, nota49_2;
+  do {
+    nota49_1 = prompt("Digite a primeira nota (entre 0 e 10): ");
+  } while (nota49_1 < 0 || nota49_1 > 10);
+  do {
+    nota49_2 = prompt("Digite a segunda nota (entre 0 e 10): ");
+  } while (nota49_2 < 0 || nota49_2 > 10);
+  let media49 = (nota49_1 + nota49_2) / 2;
+  console.log("Média: ", media49);
+  continuar49 = prompt("NOVO CÁLCULO (S/N)? ");
+} while (continuar49.toUpperCase() !== "N");
+console.log("=====================================")
+
+//////////////////////////////////////////////////////////////////
+
+// Solução do exercício 50
+console.log("Solução do exercício 50:");
+for (let i = 1; i <= 10; i++) {
+  console.log(i); // A contagem vai até 10
+}
+console.log("=====================================")
